@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    container_name: workout
+    image: postgres:14
+    environment:
+      POSTGRES_PASSWORD: workout
+      POSTGRES_USER: workout
+      POSTGRES_DB: workout
+    ports:
+      - "3600:5432"
